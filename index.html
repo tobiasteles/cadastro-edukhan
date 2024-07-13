@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
   <meta charset="UTF-8">
-  <title>Cadastro de voluntário no Edukhan</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1 id="title">Cadastro de voluntário no Edukhan</h1>
-  <p id="description">Esse cadastro foi criado para saber mais das suas habilidades e como você pode contribuir com o nosso projeto.</p>
-  <form id="survey-form">
-    <label id="name-label">Seu nome <input id="name" required placeholder="Nome"></label>
-    
-    <label id="email-label">Seu email <input id="email" type="email" required placeholder="Email"></label>
-    
-    <label id="number-label">Sua idade <input id="number" type="number" min="18" max="99" placeholder="Idade"></label>
-    
-    <label id="phone-label">Seu número de telefone <input id="phone" placeholder="(xx)xxxxx-xxxx"></label>
-    
-    <fieldset>
-      <legend>Qual disciplina você é formado?</legend>
-      <select id="dropdown" required>
-        <option value="">Selecione uma opção</option>
-        <option value="1">Português</option>
-        <option value="2">Matemática</option>
-        <option value="3">Ciências da natureza (Física, Química, Biologia)</option>
-        <option value="4">Língua estrangeira (Inglês, Espanhol, etc.)</option>
-        <option value="5">Artes (Música, Artes visuais, Teatro)</option>
-        <option value="6">Ciências sociais (História, Geografia, Filosofia, Sociologia)</option>
-      </select>
-    </fieldset>
-    
-    <label for="bio">Se não encontrou a sua área, nos diga como pode contribuir:</label>
+  <title> Cadastro de voluntário no Edukhan </title>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+<h1 id="title"> Cadastro de voluntário no Edukhan </h1>
+<p id="description">Esse cadastro foi criado para saber mais das suas habilidades e como pode contribuir com o nosso projeto</p>
+<form id="survey-form">
+  <label id="name-label"> Seu nome <input id="name" required placeholder="Nome"></input></label>
+  <label id="email-label"> Seu email 
+  <input id="email" type="email" required placeholder="Email"></input></label>
+  <label id="number-label"> Sua idade <input id="number" type="number" min="18" max="99" placeholder="Idade"></input></label>
+  <label id="phone"> Seu número de telefone: <input id="phone" placeholder="(xx)xxxxx-xxxx">
+  <fieldset>
+    <label for="referrer"> Qual disciplina você é formado?
+
+    <select id="dropdown">
+      <dropdown>
+      <option id=""> Selecione uma opção </option>
+      <option id="1"> Português </option>
+      <option id="2"> Matemática </option>
+      <option id="3"> Ciencias da natureza (Física, Química, Biologia) </option>
+      <option id="4"> Língua estrangeira (Inglês, Espanhol, etc.) </option>
+      <option id="5"> Artes (Música, Artes visuais, Teatro) </option>
+      <option id="6"> Ciencias sociais (História, Geografia, Filosofia, Sociologia) </option>
+      </dropdown>
+    </select>
+    </label>
+    <label for="bio"> Se não encontrou a sua área, nos diga como pode contribuir: 
     <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Eu possuo graduação em..."></textarea>
-    
-    <fieldset>
-      <legend>É de Brasília?</legend>
-      <label for="sim"><input id="sim" type="radio" name="location" class="inline" checked value="1"> Sim</label>
-      <label for="nao"><input id="nao" type="radio" name="location" class="inline" value="2"> Não</label>
-    </fieldset>
-    
-    <fieldset>
-      <legend>Termos e condições</legend>
-      <label for="termos-e-condicoes">
-        <input type="checkbox" id="termos-e-condicoes" required name="termos-e-condicoes" value="1"> Declaro estar ciente do uso das informações
-      </label>
-      <label for="autorizacao">
-        <input type="checkbox" id="autorizacao" required name="autorizacao" value="2"> Autorizo entrar em contato pelo WhatsApp
-      </label>
-    </fieldset>
-    
-    <input id="submit" type="submit" value="Enviar">
-  </form>
-</body>
-</html>
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>É de Brasília?</legend>
+    <label for="sim"><input id="sim" type="radio" name="option" class="inline" checked value="1"> Sim </input></label>
+    <label for="não"><input id="não" type="radio" name="option"  class="inline" value="2"> Não </input></label>
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend> Termos  e condições </legend>
+    <label for="termos-e-condições">
+    <input type="checkbox" class="inline" id="termos-e-condições" type="checkbox" required name="termos-e-condições" value="1"> Declaro estar ciente do uso das informações </input>
+    </label>
+    <label for="autorização">
+    <input type="checkbox" class="inline" id="autorização" required name="autorização" value="2"> Autorizo entrar em contato pelo whatsapp </input>
+   </label>
+  </fieldset>
+  <input id="submit" type="submit" value="Enviar" />
+</form>
+  </body>
